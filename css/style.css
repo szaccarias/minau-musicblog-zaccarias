@@ -1,0 +1,193 @@
+/* CSS General Header -> logo + Nav , Footer*/
+
+/* Fuente de Google*/
+
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap');
+    
+*{margin:0;
+padding:0;}
+
+/* Estilo General*/
+
+body a{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#main{
+    width: 100%;
+    height: 600px;
+}
+
+/* Background*/
+
+body, footer{
+    background-image: url('../media/BACKGROUND.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    
+/* Header + Nav */
+
+header{
+    background-color: black;
+}    
+
+nav ul li{
+    display: inline; 
+}
+
+h2{
+    display: inline;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.headerStyle{
+    font-size: 23px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 50px;
+    letter-spacing: 2.5px;
+    font-weight: normal;
+}
+
+#ulNav{
+    margin-top: 5px;
+    margin-right: 8px;
+    padding-right: 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Footer*/
+
+.footerLinks{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+
+/* Cierre de CSS general */
+
+/* Index */
+
+#newVideo{
+    width: 1200px;
+    height: 600px;  
+}
+
+/* About */
+
+#sectionAbout{
+    display: flex
+}
+
+#imageAbout{
+    width: 300px;
+    height: 300px;
+}
+
+#tittleAbout, #textAbout {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Grid */
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    justify-content: space-between
+}
+
+footer {
+    grid-area: footer;
+    justify-content: center;
+}
+
+section {
+    grid-area: section;
+    justify-content: center;
+}
+
+#main,
+section {
+    display: grid;
+}
+
+#main {
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+/* Media Queries*/
+
+@media screen and (min-width: 320px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto 15%;
+        grid-template-areas: "header" "section" "footer";
+    }
+    section {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    #ulNav {display: none;
+    }
+    header {
+        justify-content: space-around;
+    }
+} 
+
+@media screen and (min-width: 600px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto 15%;
+        grid-template-areas: "header" "section" "footer";
+    }
+    section {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    #ulNav {display: none;
+    }
+    header {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto 15%;
+        grid-template-areas: "header" "section" "footer";
+    }
+    section {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    #ulNav {
+        display: block;
+    }
+    #menuBurger {
+        display: none;
+    }
+}
+
