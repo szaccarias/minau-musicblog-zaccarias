@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="shortcut icon" href="/media/vajra-favicon.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Minau</title>
-
-    <!--Link archivo CSS-->
+    <!-- Link archivo CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Animated CSS-->
+    <link rel="stylesheet" href="animate-wow/animate.min.css">
+
+    <!-- Link WOW-->
+    <script src="animate-wow/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- Icono de Página-->
+    <link rel="shortcut icon" href="/media/vajra-favicon.jpg" type="image/x-icon">
+    
+    <!-- Título de Página-->
+    <title>Minau</title>
     
   </head>
 
@@ -18,17 +33,33 @@
     <!--Menú de navegación-->
     <div id="main">
       <header>
-        <h2><a class="headerStyle" href="index.html">MINAU // GØNZALO OCAMPO</a></h2>
+        <h2 class="wow animate__animated animate__shakeY"><a class="headerStyle" href="index.html">MINAU // GØNZALO OCAMPO</a></h2>
       
-        <nav>
-          <ul id="ulNav">
-          <li><a href="#">News</a></li>
-          <li><a href="pages/about.html">Abøut</a></li>
-          <li><a href="pages/releases.html">Releases</a></li>
-          <li><a href="pages/appears-in.html">Appears In</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-          </ul>
-          <i id="menuBurger" class="fa fa-bars"></i>
+        <nav id="ulNav" class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/about.html">Abøut</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/releases.html">Releases</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/appears-in.html">Appears In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
       
@@ -36,7 +67,9 @@
 
       <!--Inicio Home - Ultima Novedad-->
       <section>
-        <iframe id="newVideo" width="100%" height="100%" src="https://www.techclubbers.com/wp-content/uploads/2021/07/Vajra-Video-Promo.mp4?_=1" title="New Album - Vajra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Nuevo Video"></iframe>
+        <div class="containter-fluid">
+          <iframe id="newVideo" width="100%" height="100%" src="https://www.techclubbers.com/wp-content/uploads/2021/07/Vajra-Video-Promo.mp4?_=1" title="New Album - Vajra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Nuevo Video"></iframe>
+        </div>
       </section>
       <!--Fin Home - Ultima Novedad-->
     
@@ -57,5 +90,9 @@
 
       </footer>
    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js" ></script>
+
   </body>
 </html>

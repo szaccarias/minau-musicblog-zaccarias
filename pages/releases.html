@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <meta charset="UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Meta tags-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <link rel="shortcut icon" href="/media/vajra-favicon.jpg" type="image/x-icon">
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
 
-     <title>Releases</title>
+        <!--Link archivo CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        
+        <!-- Link Animated CSS-->
+        <link rel="stylesheet" href="../animate-wow/animate.min.css">
 
-     <!--Link archivo CSS-->
-     <link rel="stylesheet" href="../css/style.css">
+        <!-- Link WOW-->
+        <script src="../animate-wow/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+        <!-- Icono de Página-->
+        <link rel="shortcut icon" href="/media/vajra-favicon.jpg" type="image/x-icon">
+
+        <!-- Título de Página-->
+        <title>Releases</title>
 
     </head>
 
   <body>
      <!--Menú de navegación-->
         <header>
-         <h2><a class="headerStyle" href="index.html">MINAU // GØNZALO OCAMPO</a></h2>
+         <h2><a class="headerStyle" href="../index.html">MINAU // GØNZALO OCAMPO</a></h2>
 
-          <nav>
-             <ul>
-                <li><a class="navLinks" href="../index.html">News</a></li>
-                <li><a class="navLinks" href="about.html">Abøut</a></li>
-                <li><a class="navLinks" href="#">Releases</a></li>
-                <li><a class="navLinks" href="appears-in.html">Appears In</a></li>
-                <li><a class="navLinks" href="contact.html">Contact</a></li>
-             </ul>
-           </nav>
+            <nav id="ulNav" class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Abøut</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Releases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="appears-in.html">Appears In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
      <!--Cierre menú de navegación-->
 
@@ -100,5 +132,9 @@
             <a class="footerLinks" href="https://www.instagram.com/minau_ok" target="_blank">
             <img src="../media/instagram.png" alt="Instagram"></a>
         </footer>
-  </body>
+
+        <!-- Bootstrap JS -->
+        <script src="../js/bootstrap.min.js"></script>
+    
+    </body>
 </html>

@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Meta tags-->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="/media/vajra-favicon.jpg" type="image/x-icon">
+      <!-- Bootstrap CSS-->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
 
-    <title>Abøut</title>
+      <!--Link archivo CSS-->
+      <link rel="stylesheet" href="../css/style.css">
+      
+      <!-- Link Animated CSS-->
+      <link rel="stylesheet" href="../animate-wow/animate.min.css">
 
-    <!--Link archivo CSS-->
-    <link rel="stylesheet" href="../css/style.css">
-   
+      <!-- Link WOW-->
+      <script src="../animate-wow/wow.min.js"></script>
+      <script>
+         new WOW().init();
+      </script>
+
+      <!-- Icono de Página-->
+      <link rel="shortcut icon" href="/media/vajra-favicon.jpg" type="image/x-icon">
+
+      <!-- Título de Página-->
+      <title>Abøut</title>
+
    </head>
 
    <body>
       <div id="main">
          <!--Menú de navegación-->
          <header>
-            <h2><a class="headerStyle" href="index.html">MINAU // GØNZALO OCAMPO</a></h2>
+            <h2 class="wow animate__animated animate__shakeY"><a class="headerStyle" href="../index.html">MINAU // GØNZALO OCAMPO</a></h2>
 
-            <nav>
-               <ul id="ulNav">
-                  <li><a class="navLinks" href="../index.html">NEWS</a></li>
-                  <li><a class="navLinks" href="#">ABØUT</a></li>
-                  <li><a class="navLinks" href="releases.html">RELEASES</a></li>
-                  <li><a class="navLinks" href="appears-in.html">APPEARS IN</a></li>
-                  <li><a class="navLinks" href="contact.html">CONTACT</a></li>
-               </ul>
-               <i id="menuBurger" class="fa fa-bars"></i>
+            <nav id="ulNav" class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+               <div class="container-fluid">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav">
+                     <li class="nav-item">
+                       <a class="nav-link" href="/index.html">News</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Abøut</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="releases.html">Releases</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="appears-in.html">Appears In</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="contact.html">Contact</a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
             </nav>
          </header>
          <!--Cierre menú de navegación-->
 
          <!--Inicio seccion About-->
          <section id="sectionAbout">
-            <div><img id="imageAbout" src="/media/about-image.jpg" alt="Foto"></div>
-            <div></div><h3 id="tittleAbout">ABØUT</h3><div></div>
-            <hr>
-            <p id="textAbout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a numquam repellendus nemo ipsa blanditiis, nostrum ducimus vel nesciunt alias incidunt consectetur excepturi, architecto distinctio culpa rerum iusto deleniti id?
-            Quos cupiditate aperiam impedit ea labore ut quas animi aliquam ad mollitia inventore tempora officiis hic officia obcaecati nihil facilis, consequuntur dolore autem sit odit earum tempore architecto. Reprehenderit, eaque!
-            Fugiat expedita sed omnis error laudantium hic maxime quas repellat alias natus et voluptatum quibusdam doloremque possimus, sequi architecto magnam exercitationem inventore sapiente porro accusamus excepturi ex qui tempora! Quasi.
-            Molestiae dolorum tempora aliquam doloribus saepe nesciunt molestias cupiditate. Cumque magni at ipsum, similique officiis laborum debitis. Quia nostrum, illum maxime iure nam vel repellat, pariatur dignissimos ullam eius odit!
-            Alias possimus, quam ipsa repellat numquam magnam cumque recusandae distinctio nemo aut suscipit vitae reprehenderit! Accusamus eos rerum adipisci vero, officia cupiditate quos magni exercitationem saepe soluta nemo, labore omnis!
-            Quaerat dicta esse nam minima maxime accusamus consequatur exercitationem minus enim autem laborum, accusantium inventore unde amet qui. Sequi pariatur hic quo. Recusandae tenetur illo soluta molestiae, quidem ab cupiditate.
-            Ipsum qui consequuntur obcaecati eos iste quod odit iusto! Quasi nemo eius eveniet officiis soluta optio tempora eaque sit error. Quaerat sed quidem voluptatibus dignissimos architecto quasi consectetur repellendus recusandae.
-            Assumenda cupiditate at praesentium ipsam eum fuga cumque, iusto autem animi ex hic eius perferendis, ipsum quisquam repellat voluptates quod incidunt! Porro praesentium sit minima! Porro sequi corporis nobis beatae?
-            Possimus modi eveniet at odit provident, perferendis commodi necessitatibus architecto soluta? Consequatur reprehenderit laborum saepe iste suscipit? Illum molestias aperiam veniam odio quaerat, repudiandae delectus quisquam, minima consectetur molestiae animi!
-            Omnis laudantium ipsa, sit harum aut amet nobis rerum tempora! Inventore obcaecati nisi minima sed, fugiat blanditiis vero possimus veritatis doloremque facilis quis quod consequatur amet excepturi eveniet vitae laborum?</p>
+            <div class="border-light" style="max-width: 70rem;">
+               <div class="row g-0">
+                  <div class="col-md-4">
+                     <img id="imageAbout" src="/media/about-image.jpg" class="img-fluid rounded-start" alt="Foto">
+                     </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 id="tittleAbout" class="card-title">ABØUT</h5>
+                        <hr style="color: white;">
+                        <p id="textAbout" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a numquam repellendus nemo ipsa blanditiis, nostrum ducimus vel nesciunt alias incidunt consectetur excepturi, architecto distinctio culpa rerum iusto deleniti id?
+                           Quos cupiditate aperiam impedit ea labore ut quas animi aliquam ad mollitia inventore tempora officiis hic officia obcaecati nihil facilis, consequuntur dolore autem sit odit earum tempore architecto. Reprehenderit, eaque!
+                           Fugiat expedita sed omnis error laudantium hic maxime quas repellat alias natus et voluptatum quibusdam doloremque possimus, sequi architecto magnam exercitationem inventore sapiente porro accusamus excepturi ex qui tempora! Quasi.
+                           Molestiae dolorum tempora aliquam doloribus saepe nesciunt molestias cupiditate. Cumque magni at ipsum, similique officiis laborum debitis. Quia nostrum, illum maxime iure nam vel repellat, pariatur dignissimos ullam eius odit!
+                           Alias possimus, quam ipsa repellat numquam magnam cumque recusandae distinctio nemo aut suscipit vitae reprehenderit! Accusamus eos rerum adipisci vero, officia cupiditate quos magni exercitationem saepe soluta nemo, labore omnis!.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
          <!--Fin sección About-->
       
@@ -67,5 +103,9 @@
             <img src="../media/instagram.png" alt="Instagram"></a>
          </footer>
       </div>
-  </body>
+
+      <!-- Bootstrap JS -->
+      <script src="../js/bootstrap.min.js"></script>
+    
+   </body>
 </html>
