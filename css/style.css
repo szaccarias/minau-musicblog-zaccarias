@@ -140,8 +140,16 @@ ul, .navbar-nav li, .nav-item, .nav-link{
 
 .sectionsAppearsIn{
     margin-top: 15px;
+    margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#appearsInVideo{
+    width: 60rem;
+    height: 30rem;  
+    margin-top: 20px;
 }
 
 /* Contact*/
