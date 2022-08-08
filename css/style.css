@@ -79,7 +79,6 @@ ul, .navbar-nav li, .nav-item, .nav-link{
     color: rgb(255, 255, 255)
 }
 
-
 /* Footer*/
 
 .footerLinks{
@@ -94,8 +93,8 @@ ul, .navbar-nav li, .nav-item, .nav-link{
 /* Index */
 
 #newVideo{
-    width: 1200px;
-    height: 600px;  
+    width: 80rem;
+    height: 40rem;  
     margin-top: 20px;
 }
 
@@ -111,6 +110,45 @@ ul, .navbar-nav li, .nav-item, .nav-link{
 }
 
 #tittleAbout, #textAbout {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Releases*/
+
+#releases{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-content: center;
+}
+
+#imgLastAlbum{
+    width: 450px;
+    height: 450px;
+}
+
+#textLastAlbum{
+    margin-top: 10px;
+    width: 500px;
+}
+
+
+/* Appears In*/
+
+.sectionsAppearsIn{
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Contact*/
+
+.sectionsContact{
+    margin-top: 15px;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
 }
@@ -148,6 +186,10 @@ section {
     row-gap: 5px;
 }
 
+#tittleResponsive{
+    display: none;
+}
+
 /* Media Queries*/
 
 @media (max-width: 576px) {
@@ -163,6 +205,12 @@ section {
     header {
         justify-content: space-around;  
     }
+    #tittleResponsive{
+        display: block;
+    }
+    #tittleDesktop{
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
@@ -177,6 +225,12 @@ section {
     }
     header {
         justify-content: space-around;
+    }
+    #tittleResponsive{
+        display: block;
+    }
+    #tittleDesktop{
+        display: none;
     }
 }
 
