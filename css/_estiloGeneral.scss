@@ -1,0 +1,85 @@
+/* Estilo General*/
+
+body a{
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;
+}
+
+#main{
+    width: 100%;
+    height: 40rem;
+    a{
+        text-decoration: none;
+        &:hover {
+            color: gray;
+            filter: blur(0.5px);
+        }
+    }
+}
+
+/* Background*/
+
+body, footer{
+    background-image: url('../media/BACKGROUND.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    
+/* Header + Nav */
+
+header{
+    background-color: black;
+    h2{
+        display: inline;
+        a{
+            text-decoration: none;
+        }    
+    }
+}
+
+nav{
+    display: inline;
+    ul{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+        }   
+    }
+}
+
+.headerStyle{
+    font-size: 23px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 50px;
+    letter-spacing: 2.5px;
+    font-weight: normal;
+}
+
+#ulNav{
+    margin-top: 5px;
+    margin-right: 8px;
+    padding-right: 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-style: normal;
+    font-weight: 700;
+    color: $colorPrincipal;
+}
+
+ul, .navbar-nav li, .nav-item, .nav-link{
+    color: $colorPrincipal;
+}
+
+/* Footer*/
+
+.footerLinks{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+
+/* Cierre de CSS general */

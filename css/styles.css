@@ -1,0 +1,243 @@
+/* CSS General Header -> logo + Nav , Footer*/
+/* Fuente de Google*/
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap");
+/* Estilo General*/
+body a {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+#main {
+  width: 100%;
+  height: 40rem;
+}
+#main a {
+  text-decoration: none;
+}
+#main a:hover {
+  color: gray;
+  filter: blur(0.5px);
+}
+
+/* Background*/
+body, footer {
+  background-image: url("../media/BACKGROUND.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header + Nav */
+header {
+  background-color: black;
+}
+header h2 {
+  display: inline;
+}
+header h2 a {
+  text-decoration: none;
+}
+
+nav {
+  display: inline;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul a {
+  text-decoration: none;
+}
+
+.headerStyle {
+  font-size: 23px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 50px;
+  letter-spacing: 2.5px;
+  font-weight: normal;
+}
+
+#ulNav {
+  margin-top: 5px;
+  margin-right: 8px;
+  padding-right: 8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+ul, .navbar-nav li, .nav-item, .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+/* Footer*/
+.footerLinks {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+}
+
+/* Cierre de CSS general */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Index */
+#newVideo {
+  width: 80rem;
+  height: 40rem;
+  margin-top: 20px;
+}
+
+/* About */
+#sectionAbout {
+  margin-top: 20px;
+}
+
+#imageAbout {
+  width: 22rem;
+  height: 22rem;
+}
+
+#tittleAbout, #textAbout {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+/* Releases*/
+#releases {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-content: center;
+}
+
+#imgLastAlbum {
+  width: 28rem;
+  height: 28rem;
+}
+
+#textLastAlbum {
+  margin-top: 10px;
+  width: 32rem;
+}
+
+/* Appears In*/
+.sectionsAppearsIn {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#appearsInVideo {
+  width: 60rem;
+  height: 30rem;
+  margin-top: 20px;
+}
+
+/* Contact*/
+.sectionsContact {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+/* Grid */
+header,
+footer {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  grid-area: header;
+  justify-content: space-between;
+}
+
+footer {
+  grid-area: footer;
+  justify-content: center;
+}
+
+section {
+  grid-area: section;
+  justify-content: center;
+}
+
+#main,
+section {
+  display: grid;
+}
+
+#main {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 5px;
+}
+
+#tittleResponsive {
+  display: none;
+}
+
+/* Media Queries*/
+@media (max-width: 576px) {
+  #main {
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto 15%;
+    grid-template-areas: "header" "section" "footer";
+  }
+  section {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  header {
+    justify-content: space-around;
+  }
+  #tittleResponsive {
+    display: block;
+  }
+  #tittleDesktop {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  #main {
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto 15%;
+    grid-template-areas: "header" "section" "footer";
+  }
+  section {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  header {
+    justify-content: space-around;
+  }
+  #tittleResponsive {
+    display: block;
+  }
+  #tittleDesktop {
+    display: none;
+  }
+}
+@media (min-width: 993px) {
+  #main {
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto 15%;
+    grid-template-areas: "header" "section" "footer";
+  }
+  section {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

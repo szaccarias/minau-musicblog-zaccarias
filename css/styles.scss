@@ -3,92 +3,11 @@
 /* Fuente de Google*/
 
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap');
+@import "variables";
+@import "estiloGeneral";
     
 *{margin:0;
 padding:0;}
-
-/* Estilo General*/
-
-body a{
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
-}
-
-#main{
-    width: 100%;
-    height: 600px;
-}
-
-/* Background*/
-
-body, footer{
-    background-image: url('../media/BACKGROUND.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-    
-/* Header + Nav */
-
-header{
-    background-color: black;
-}    
-
-nav ul li{
-    display: inline; 
-}
-
-h2{
-    display: inline;
-}
-
-ul{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.headerStyle{
-    font-size: 23px;
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 50px;
-    letter-spacing: 2.5px;
-    font-weight: normal;
-}
-
-#main a:hover {
-    color: gray;
-    filter: blur(0.5px);
-}
-
-#ulNav{
-    margin-top: 5px;
-    margin-right: 8px;
-    padding-right: 8px;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-ul, .navbar-nav li, .nav-item, .nav-link{
-    color: rgb(255, 255, 255)
-}
-
-/* Footer*/
-
-.footerLinks{
-    display: flex;
-    width: 16px;
-    height: 16px;
-    margin: 2px;
-}
-
-/* Cierre de CSS general */
 
 /* Index */
 
@@ -105,13 +24,13 @@ ul, .navbar-nav li, .nav-item, .nav-link{
 }
 
 #imageAbout{
-    width: 350px;
-    height: 350px;
+    width: 22rem;
+    height: 22rem;
 }
 
 #tittleAbout, #textAbout {
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;
 }
 
 /* Releases*/
@@ -119,20 +38,20 @@ ul, .navbar-nav li, .nav-item, .nav-link{
 #releases{
     margin-top: 15px;
     margin-bottom: 15px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;
     text-align: center;
     align-content: center;
 }
 
 #imgLastAlbum{
-    width: 450px;
-    height: 450px;
+    width: 28rem;
+    height: 28rem;
 }
 
 #textLastAlbum{
     margin-top: 10px;
-    width: 500px;
+    width: 32rem;
 }
 
 
@@ -141,8 +60,8 @@ ul, .navbar-nav li, .nav-item, .nav-link{
 .sectionsAppearsIn{
     margin-top: 15px;
     margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;
     text-align: center;
 }
 
@@ -157,8 +76,8 @@ ul, .navbar-nav li, .nav-item, .nav-link{
 .sectionsContact{
     margin-top: 15px;
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;
 }
 
 /* Grid */
@@ -242,7 +161,7 @@ section {
     }
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 993px) {
     #main{
         grid-template-columns: auto;
         grid-template-rows: 10% auto 15%;
