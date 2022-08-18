@@ -1,6 +1,11 @@
+@charset "UTF-8";
 /* CSS General Header -> logo + Nav , Footer*/
 /* Fuente de Google*/
 @import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@500 & display=swap");
+/* Estilo General del Site*/
+/* Tamaño del main*/
+/* Tamaño de videos*/
+/* Tamaño de links*/
 /* Estilo General*/
 body a {
   font-family: "Montserrat", sans-serif;
@@ -49,10 +54,10 @@ nav ul a {
 }
 
 .headerStyle {
-  font-size: 23px;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 50px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 3rem;
   letter-spacing: 2.5px;
   font-weight: normal;
 }
@@ -74,10 +79,10 @@ ul, .navbar-nav li, .nav-item, .nav-link {
 }
 
 /* Footer*/
-.footerLinks {
+.footerLinks, .newButton {
   display: flex;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   margin: 2px;
 }
 
@@ -193,7 +198,7 @@ section {
 @media (max-width: 576px) {
   #main {
     grid-template-columns: auto;
-    grid-template-rows: 10% auto 15%;
+    grid-template-rows: auto auto 15%;
     grid-template-areas: "header" "section" "footer";
   }
   section {
@@ -208,12 +213,16 @@ section {
   }
   #tittleDesktop {
     display: none;
+  }
+  #newVideo {
+    width: 26.6666666667rem;
+    height: 13.3333333333rem;
   }
 }
 @media (max-width: 992px) {
   #main {
     grid-template-columns: auto;
-    grid-template-rows: 10% auto 15%;
+    grid-template-rows: auto auto 15%;
     grid-template-areas: "header" "section" "footer";
   }
   section {
@@ -228,6 +237,10 @@ section {
   }
   #tittleDesktop {
     display: none;
+  }
+  #newVideo {
+    width: 40rem;
+    height: 20rem;
   }
 }
 @media (min-width: 993px) {
@@ -240,4 +253,70 @@ section {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
+}
+/* Bucle For */
+.btn-1 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-2 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-3 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-4 {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Mapas*/
+/* Bucle Each*/
+.facebook {
+  background-color: blue;
+  color: blue;
+}
+
+.spotify {
+  background-color: green;
+  color: green;
+}
+
+.soundcloud {
+  background-color: orange;
+  color: orange;
+}
+
+.instagram {
+  background-color: deeppink;
+  color: deeppink;
+}
+
+/* Map Get*/
+.newButton {
+  color: orange;
+}
+
+/* Extend*/
+.newButton {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+/* Mixin*/
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.newButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
