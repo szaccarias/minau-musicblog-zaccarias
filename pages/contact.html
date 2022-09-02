@@ -30,109 +30,110 @@
   </head>
 
   <body>
-    <!--Menú de navegación-->
-    <header>
-      <h2 id="tittleDesktop" class="wow animate__animated animate__shakeY"><a class="headerStyle" href="../index.html">MINAU // GØNZALO OCAMPO</a></h2>
-      <h2 id="tittleResponsive" class="wow animate__animated animate__shakeY"><a class="headerStyle" href="../index.html">MINAU</a></h2>
+    <div id="main">
+      <!--Menú de navegación-->
+      <header>
+        <h2 id="tittleDesktop" class="wow animate__animated animate__shakeY"><a class="headerStyle" href="../index.html">MINAU // GØNZALO OCAMPO</a></h2>
+        <h2 id="tittleResponsive" class="wow animate__animated animate__shakeY"><a class="headerStyle" href="../index.html">MINAU</a></h2>
 
-      <nav id="ulNav" class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="../index.html">News</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="about.html">Abøut</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="releases.html">Releases</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="appears-in.html">Appears In</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+        <nav id="ulNav" class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Abøut</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="releases.html">Releases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="appears-in.html">Appears In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <!--Cierre menú de navegación-->
+      <!--Cierre menú de navegación-->
 
-    <section class="sectionsContact">
-       <div><h2 id="contactTitle">Contacto</h2>
-        <h3>Minau // Gønzalo Ocampo</h3>
-        <h3>gonzalo.composer@gmail.com</h3>
-        <h3>fm@thisuniverso.com</h3>
-      </div>
-    </section>
+      <section class="sectionsContact">
+        <article>
+          <div><h2 id="contactTitle">Contacto</h2>
+            <h3>Minau // Gønzalo Ocampo</h3>
+            <h3>gonzalo.composer@gmail.com</h3>
+            <h3>fm@thisuniverso.com</h3>
+          </div>
+        </article>
+        
+        <!--Formulario de Contacto-->
+        <article>
+          <form id="formContact" action="" method="get" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Contact Info:</legend>
+              <label for="gender">Gender:</label>
+              <br>
 
-    <!--Formulario de Contacto-->
-   <section class="sectionsContact">
-      <article>
-        <form id="formContact" action="" method="get" enctype="multipart/form-data">
-          <fieldset>
-            <legend>Contact Info:</legend>
-            <label for="gender">Gender:</label>
-            <br>
+              <input type="radio" id="man" name="gender" value="man">
+              <label for="man">Man</label>
+              <input type="radio" id="woman" name="gender" value="woman">
+              <label for="woman">Woman</label>
+              <br>
 
-            <input type="radio" id="man" name="gender" value="man">
-            <label for="man">Man</label>
-            <input type="radio" id="woman" name="gender" value="woman">
-            <label for="woman">Woman</label>
-            <br>
+              <label for="name">Name:</label>
+              <br>
+              <input type="name" name="name" placeholder="Name*">
+              <br>
 
-            <label for="name">Name:</label>
-            <br>
-            <input type="name" name="name" placeholder="Name*">
-            <br>
+              <label for="email">Email:</label>
+              <br>
+              <input type="name" name="email" placeholder="Email*">
 
-            <label for="email">Email:</label>
-            <br>
-            <input type="name" name="email" placeholder="Email*">
+              <br>
 
-            <br>
+              <div>I agree to receive the newsletter.
+              <input type="checkbox" name="accept" value="1">
+              <br>
 
-            <div>I agree to receive the newsletter.
-            <input type="checkbox" name="accept" value="1">
-            <br>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message*"></textarea>
+              <br>
+            
+              <input type="submit" name="send" value="Send">
+              <input type="reset" name="reset" value="Reset"></div>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+      
+      <!--Cierre de formulario de Contacto-->
 
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message*"></textarea>
-            <br>
+      <!--Footer-->
+      <footer>
           
-            <input type="submit" name="send" value="Send">
-            <input type="reset" name="reset" value="Reset"></div>
-          </fieldset>
-        </form>
-      </article>
-    </section>
-    
-    <!--Cierre de formulario de Contacto-->
+        <a class="footerLinks" href="https://www.facebook.com/G3nzalo" target="_blank">
+        <img src="../media/fb.png" alt="Facebook"></a>
 
-    <!--Footer-->
-    <footer>
-         
-      <a class="footerLinks" href="https://www.facebook.com/G3nzalo" target="_blank">
-      <img src="../media/fb.png" alt="Facebook"></a>
+        <a class="footerLinks" href="https://open.spotify.com/artist/37N0uvvZ0G68o6YLNhLVc1" target="_blank">
+        <img src="../media/spotify.png" alt="Spotify"></a>
 
-      <a class="footerLinks" href="https://open.spotify.com/artist/37N0uvvZ0G68o6YLNhLVc1" target="_blank">
-      <img src="../media/spotify.png" alt="Spotify"></a>
+        <a class="footerLinks" href="https://soundcloud.com/minau-official" target="_blank">
+        <img src="../media/soundcloud.png" alt="Soundcloud"></a>
 
-      <a class="footerLinks" href="https://soundcloud.com/minau-official" target="_blank">
-      <img src="../media/soundcloud.png" alt="Soundcloud"></a>
+        <a class="footerLinks" href="https://www.instagram.com/minau_ok" target="_blank">
+        <img src="../media/instagram.png" alt="Instagram"></a>
+      </footer>
 
-      <a class="footerLinks" href="https://www.instagram.com/minau_ok" target="_blank">
-      <img src="../media/instagram.png" alt="Instagram"></a>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="../js/bootstrap.min.js"></script>
-    
+      <!-- Bootstrap JS -->
+      <script src="../js/bootstrap.min.js"></script>
+    </div>
   </body>
 </html>

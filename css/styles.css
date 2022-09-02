@@ -94,11 +94,19 @@ ul, .navbar-nav li, .nav-item, .nav-link {
 
 /* Index */
 #newVideo {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .sectionIndex {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.articleIndex {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
@@ -132,13 +140,13 @@ ul, .navbar-nav li, .nav-item, .nav-link {
 }
 
 #imgLastAlbum {
-  width: 28rem;
-  height: 28rem;
+  width: 22rem;
+  height: 22rem;
 }
 
 #textLastAlbum {
   margin-top: 10px;
-  width: 32rem;
+  width: 30rem;
 }
 
 /* Appears In*/

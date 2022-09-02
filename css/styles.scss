@@ -12,11 +12,19 @@ padding:0;}
 /* Index */
 
 #newVideo{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .sectionIndex{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: $fuentePrincipal;
+    color: $colorPrincipal;
+    text-align: center;
+}
+
+.articleIndex{
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-family: $fuentePrincipal;
@@ -52,13 +60,13 @@ padding:0;}
 }
 
 #imgLastAlbum{
-    width: 28rem;
-    height: 28rem;
+    width: 22rem;
+    height: 22rem;
 }
 
 #textLastAlbum{
     margin-top: 10px;
-    width: 32rem;
+    width: 30rem;
 }
 
 /* Appears In*/
