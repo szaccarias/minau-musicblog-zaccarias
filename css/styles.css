@@ -79,7 +79,7 @@ ul, .navbar-nav li, .nav-item, .nav-link {
 }
 
 /* Footer*/
-.footerLinks, .newButton {
+.footerLinks {
   display: flex;
   width: 1rem;
   height: 1rem;
@@ -94,9 +94,16 @@ ul, .navbar-nav li, .nav-item, .nav-link {
 
 /* Index */
 #newVideo {
-  width: 80rem;
-  height: 40rem;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sectionIndex {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 /* About */
@@ -141,12 +148,6 @@ ul, .navbar-nav li, .nav-item, .nav-link {
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
-}
-
-#appearsInVideo {
-  width: 60rem;
-  height: 30rem;
-  margin-top: 20px;
 }
 
 /* Contact*/
@@ -195,7 +196,7 @@ section {
 }
 
 /* Media Queries*/
-@media (max-width: 576px) {
+@media (max-width: 576) {
   #main {
     grid-template-columns: auto;
     grid-template-rows: auto auto 15%;
@@ -213,11 +214,15 @@ section {
   }
   #tittleDesktop {
     display: none;
-  }
-  #newVideo {
-    width: 26.6666666667rem;
-    height: 13.3333333333rem;
-  }
+  } /*
+#newVideo{
+    width: ($anchoVideo / 15);
+    height: ($altoVideo / 15);
+}
+#appearsInVideo{
+    width: ($anchoVideo / 15);
+    height: ($altoVideo / 15);  
+}*/
 }
 @media (max-width: 992px) {
   #main {
@@ -237,11 +242,11 @@ section {
   }
   #tittleDesktop {
     display: none;
-  }
-  #newVideo {
-    width: 40rem;
-    height: 20rem;
-  }
+  } /*
+#newVideo{
+    width: ($anchoVideo / 2);
+    height: ($altoVideo / 2);
+}*/
 }
 @media (min-width: 993px) {
   #main {
@@ -255,68 +260,53 @@ section {
   }
 }
 /* Bucle For */
-.btn-1 {
-  width: 1rem;
-  height: 1rem;
-}
-
-.btn-2 {
-  width: 1rem;
-  height: 1rem;
-}
-
-.btn-3 {
-  width: 1rem;
-  height: 1rem;
-}
-
-.btn-4 {
-  width: 1rem;
-  height: 1rem;
+/*
+@for $i from 1 through 4 {
+    .btn-1rem {
+        width: $tamanoboton * 1;
+        height: $tamanoboton * 1;
+    }
 }
 
 /* Mapas*/
+/*
+$redes: (facebook: blue, spotify:green, soundcloud:orange, instagram:deeppink);
+
 /* Bucle Each*/
-.facebook {
-  background-color: blue;
-  color: blue;
-}
-
-.spotify {
-  background-color: green;
-  color: green;
-}
-
-.soundcloud {
-  background-color: orange;
-  color: orange;
-}
-
-.instagram {
-  background-color: deeppink;
-  color: deeppink;
+/*
+@each $red, $color in $redes {
+    .1rem {
+        background-color: $color;
+        color: $color;
+    }
 }
 
 /* Map Get*/
-.newButton {
-  color: orange;
+/*
+.newButton{
+    color: map-get($redes, soundcloud)
 }
-
 /* Extend*/
-.newButton {
-  font-family: "Montserrat", sans-serif;
-  background-color: black;
+/*
+.newButton{
+    @extend .footerLinks;
+    font-family: $fuentePrincipal;
+    background-color: black;
 }
 
 /* Mixin*/
-.copyright {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/*
+@mixin flex-row-center {
+    display:flex;
+    flex-direction: row;
+    justify-content: center
 }
 
-.newButton {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}/*# sourceMappingURL=styles.css.map */
+.copyright{
+    @include flex-row-center;
+}
+
+.newButton{
+    @include flex-row-center;
+}
+*//*# sourceMappingURL=styles.css.map */
