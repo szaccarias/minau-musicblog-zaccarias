@@ -158,6 +158,11 @@ ul, .navbar-nav li, .nav-item, .nav-link {
   text-align: center;
 }
 
+.colabTittleLabels {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Contact*/
 .sectionsContact {
   margin-top: 15px;
