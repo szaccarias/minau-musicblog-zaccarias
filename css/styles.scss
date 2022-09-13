@@ -150,7 +150,18 @@ section {
     }
     #tittleDesktop{
         display: none;
-    }/*
+    }
+    .navbar-nav {
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+        text-align: center;
+        letter-spacing: 2px;
+        border-radius: 15px;
+        width: 100px;
+        margin-top: 15px;
+      }
+    /*
     #newVideo{
         width: ($anchoVideo / 15);
         height: ($altoVideo / 15);
@@ -179,7 +190,18 @@ section {
     }
     #tittleDesktop{
         display: none;
-    }/*
+    }
+    .navbar-nav {
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+        text-align: center;
+        letter-spacing: 2px;
+        border-radius: 15px;
+        width: 100px;
+        margin-top: 15px;
+      }
+    /*
     #newVideo{
         width: ($anchoVideo / 2);
         height: ($altoVideo / 2);
